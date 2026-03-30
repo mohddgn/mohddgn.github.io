@@ -14,11 +14,12 @@ body {
   color: #1e293b;
 }
 
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 20px;
+  padding: 15px;
   background: white;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
@@ -33,9 +34,10 @@ nav a:hover {
   color: #0ea5e9;
 }
 
+/* HERO */
 header {
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
 }
@@ -51,42 +53,37 @@ header p {
   color: #cbd5f5;
 }
 
-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  margin-top: 25px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-.skills span {
-  display: inline-block;
-  background: #0ea5e9;
-  color: white;
-  padding: 8px 12px;
-  margin: 5px;
-  border-radius: 6px;
-  font-size: 13px;
-}
-
-.socials {
-  margin-top: 20px;
+/* INTRO */
+.intro {
+  max-width: 700px;
+  margin: 40px auto;
   text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* SLIDER */
+.slider {
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.slider img {
+  width: 100%;
+  display: none;
+}
+
+.slider img.active {
+  display: block;
+}
+
+/* SOCIAL */
+.socials {
+  text-align: center;
+  margin: 40px 0;
 }
 
 .socials a {
@@ -100,9 +97,10 @@ h3 {
   color: #0ea5e9;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   background: #0f172a;
   color: white;
 }
@@ -130,140 +128,48 @@ footer {
   <p>Environmental Scientist | Ecology • Data • Sustainability</p>
 </header>
 
-<section>
-  <h2>Welcome</h2>
-  <div class="card">
-    <p>
-      Environmental Scientist with experience across ecological research, environmental consulting, fieldwork, 
-      and laboratory analysis. My work integrates biodiversity assessment, sustainability frameworks, and 
-      data-driven approaches to better understand and manage environmental systems.
-    </p>
-  </div>
-</section>
+<div class="intro">
+  <p>
+    Environmental scientist working across fieldwork, research, and data-driven analysis. 
+    Focused on understanding biodiversity and environmental systems through practical and analytical approaches.
+  </p>
+</div>
 
-<section>
-  <h2>Focus</h2>
-  <div class="card">
-    <p>
-      Biodiversity • Marine & Coastal Systems • Environmental Data • Sustainability • Ecosystem Assessment
-    </p>
-  </div>
-</section>
+<!-- IMAGE SLIDER -->
+<div class="slider">
+  <img src="img1.jpg" class="active">
+  <img src="img2.jpg">
+  <img src="img3.jpg">
+</div>
 
-<section>
-  <h2>Core Skills</h2>
+<div class="socials">
+  <a href="https://www.linkedin.com/in/YOURPROFILE" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
 
-  <h3>Environmental Assessment</h3>
-  <div class="skills">
-    <span>EIA & EBS</span>
-    <span>Critical Habitat Assessment</span>
-    <span>Impact Prediction</span>
-    <span>Cumulative Impact Assessment</span>
-    <span>Environmental Monitoring</span>
-  </div>
+  <a href="https://www.researchgate.net/profile/YOURPROFILE" target="_blank">
+    <i class="fab fa-researchgate"></i>
+  </a>
 
-  <h3>Regulatory & Compliance</h3>
-  <div class="skills">
-    <span>ISO 14001 EMS</span>
-    <span>Environmental Permitting</span>
-    <span>Compliance Auditing</span>
-    <span>EMP Development</span>
-    <span>Regulatory Submissions</span>
-  </div>
-
-  <h3>Biodiversity & Ecology</h3>
-  <div class="skills">
-    <span>Habitat Mapping</span>
-    <span>Flora & Fauna Surveys</span>
-    <span>Marine Ecology</span>
-    <span>Ecological Risk Screening</span>
-    <span>Wetland Conservation</span>
-  </div>
-
-  <h3>Marine & Coastal</h3>
-  <div class="skills">
-    <span>Plankton Analysis</span>
-    <span>Zooplankton Taxonomy</span>
-    <span>Coastal Monitoring</span>
-    <span>Water Quality Analysis</span>
-    <span>Megafauna Ecology</span>
-  </div>
-
-  <h3>Field & Laboratory</h3>
-  <div class="skills">
-    <span>Sampling Protocols</span>
-    <span>DNA Extraction</span>
-    <span>Histopathology</span>
-    <span>QA/QC Procedures</span>
-    <span>Pollution Assessment</span>
-  </div>
-
-  <h3>GIS & Data</h3>
-  <div class="skills">
-    <span>ArcGIS</span>
-    <span>R</span>
-    <span>Minitab</span>
-    <span>Advanced Excel</span>
-    <span>Data Visualization</span>
-  </div>
-
-  <h3>Sustainability & ESG</h3>
-  <div class="skills">
-    <span>ESG Reporting (GRI)</span>
-    <span>TCFD</span>
-    <span>Climate Risk</span>
-    <span>Sustainable Finance</span>
-  </div>
-
-  <h3>Communication</h3>
-  <div class="skills">
-    <span>Technical Writing</span>
-    <span>Stakeholder Communication</span>
-    <span>Policy Briefs</span>
-    <span>Presentations</span>
-  </div>
-
-</section>
-
-<section>
-  <h2>Certifications</h2>
-
-  <div class="card">
-    <ul>
-      <li>ISO 14001 EMS Internal Auditing — Başkent University</li>
-      <li>Marine Histopathology & Molecular Analysis — Qatar University</li>
-      <li>Wetland Science & Conservation — University of Illinois</li>
-      <li>Sustainability, ESG & Sustainable Finance — Oxford Saïd</li>
-      <li>Sustainable Resource Management — TU Delft</li>
-      <li>Environmental Project Management — University of Maryland</li>
-      <li>Introduction to LEED v5 — U.S. Green Building Council</li>
-    </ul>
-  </div>
-
-</section>
-
-<section>
-  <h2>Connect</h2>
-
-  <div class="socials">
-    <a href="https://www.linkedin.com/in/YOURPROFILE" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="https://www.researchgate.net/profile/YOURPROFILE" target="_blank">
-      <i class="fab fa-researchgate"></i>
-    </a>
-
-    <a href="https://github.com/mohddgn" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
-
-</section>
+  <a href="https://github.com/mohddgn" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
 
 <footer>
   <p>© 2026 Muhammed Dogan</p>
 </footer>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slider img");
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
+</script>
 
 </body>
 </html>
