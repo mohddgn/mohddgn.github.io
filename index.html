@@ -10,8 +10,8 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+  color: #0f172a;
   background: #ffffff;
-  color: #1e293b;
 }
 
 /* NAV */
@@ -20,13 +20,12 @@ nav {
   justify-content: center;
   gap: 30px;
   padding: 20px;
-  background: white;
+  font-weight: 500;
 }
 
 nav a {
   text-decoration: none;
-  color: #1e293b;
-  font-weight: 500;
+  color: #0f172a;
 }
 
 nav a:hover {
@@ -35,156 +34,185 @@ nav a:hover {
 
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 120px 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+  gap: 40px;
 }
 
-.hero h1 {
-  font-size: 48px;
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 52px;
   margin: 0;
 }
 
-.hero p {
-  font-size: 20px;
-  margin-top: 15px;
+.hero-text p {
+  font-size: 18px;
+  margin-top: 20px;
   color: #475569;
+  line-height: 1.6;
 }
 
-/* HERO IMAGE */
+.hero-highlight {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .hero-image {
-  max-width: 900px;
-  margin: 40px auto;
+  flex: 1;
 }
 
 .hero-image img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 
 /* SECTION */
 .section {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+/* TWO COLUMN */
+.two-col {
+  display: flex;
+  gap: 60px;
+}
+
+.col {
+  flex: 1;
+}
+
+.col h3 {
+  margin-bottom: 10px;
+}
+
+.col p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* HIGHLIGHT SECTION */
+.highlight {
+  background: #f1f5f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.highlight p {
   max-width: 800px;
   margin: auto;
-  padding: 80px 20px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* CTA */
+.cta {
   text-align: center;
+  margin: 100px 0;
 }
 
-/* LARGE TEXT */
-.big-text {
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-/* SMALL TEXT */
-.small-text {
-  margin-top: 20px;
-  font-size: 16px;
-  color: #64748b;
-  line-height: 1.6;
-}
-
-/* SOCIAL */
-.socials {
-  text-align: center;
-  margin: 60px 0;
-}
-
-.socials a {
-  margin: 0 12px;
-  font-size: 22px;
-  color: #1e293b;
-}
-
-.socials a:hover {
+.cta a {
+  text-decoration: none;
+  font-weight: 600;
   color: #0ea5e9;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px;
   background: #0f172a;
   color: white;
 }
 
 footer a {
   color: #cbd5f5;
-  margin: 0 10px;
   text-decoration: none;
 }
-
-footer a:hover {
-  color: white;
-}
 </style>
-
-<script src="https://kit.fontawesome.com/4a7c1b7c9b.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="work.html">Work</a>
-  <a href="publications.html">Publications</a>
-  <a href="blog.html">Blog</a>
-  <a href="contact.html">Contact</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Work</a>
+  <a href="#">Publications</a>
+  <a href="#">Blog</a>
+  <a href="#">Contact</a>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
-  <h1>Muhammed Dogan</h1>
-  <p>Environmental Scientist</p>
+
+  <div class="hero-text">
+    <h1>Muhammed Dogan</h1>
+
+    <div class="hero-highlight">
+      Environmental Scientist
+    </div>
+
+    <p>
+      Bridging field ecology, environmental data, and sustainability-driven decision-making across real ecosystems in the UAE and Qatar.
+    </p>
+  </div>
+
+  <div class="hero-image">
+    <img src="IMG_3051.jpg" alt="Fieldwork">
+  </div>
+
 </div>
 
-<div class="hero-image">
-  <img src="your-image.jpg" alt="Fieldwork">
-</div>
-
+<!-- SECTION -->
 <div class="section">
-  <div class="big-text">
-    I am an Environmental Scientist based in Abu Dhabi, working across environmental consulting, ecological fieldwork, and environmental data analysis.
+
+  <div class="two-col">
+
+    <div class="col">
+      <h3>Scope of Work</h3>
+      <p>
+        Environmental Impact Assessments (EIA), Environmental Baseline Studies (EBS), and biodiversity assessments across marine, coastal, and terrestrial ecosystems.
+      </p>
+    </div>
+
+    <div class="col">
+      <h3>Professional Context</h3>
+      <p>
+        Supporting regulatory submissions aligned with EAD, DM, DECCA, and ISO 14001, with exposure to ESG and sustainability reporting frameworks.
+      </p>
+    </div>
+
   </div>
 
-  <div class="small-text">
-    My work focuses on Environmental Impact Assessments (EIA), Environmental Baseline Studies (EBS), and biodiversity monitoring across marine, coastal, and terrestrial ecosystems in the UAE and Qatar.
-  </div>
 </div>
 
-<div class="section">
-  <div class="big-text">
-    I have contributed to multidisciplinary environmental projects involving habitat assessments, ecological surveys, and environmental monitoring.
-  </div>
-
-  <div class="small-text">
-    My work supports regulatory submissions aligned with EAD, DM, DECCA, and ISO 14001 frameworks, translating complex environmental data into structured, regulatory-ready insights.
-  </div>
+<!-- HIGHLIGHT -->
+<div class="highlight">
+  <p>
+    I combine field-based ecological work with environmental data analysis, working with biodiversity datasets to identify patterns, quantify ecosystems, and support evidence-based environmental and sustainability decision-making.
+  </p>
 </div>
 
-<div class="section">
-  <div class="big-text">
-    My work sits at the intersection of field ecology and environmental data analysis.
-  </div>
-
-  <div class="small-text">
-    I apply statistical approaches to biodiversity datasets, working with large-scale environmental data to identify patterns, quantify ecosystem dynamics, and support evidence-based environmental assessment.
-  </div>
-</div>
-
-<div class="socials">
-  <a href="https://www.linkedin.com/in/YOURPROFILE"><i class="fab fa-linkedin"></i></a>
-  <a href="https://www.researchgate.net/profile/YOURPROFILE"><i class="fab fa-researchgate"></i></a>
-  <a href="https://github.com/mohddgn"><i class="fab fa-github"></i></a>
+<!-- CTA -->
+<div class="cta">
+  <a href="#">Explore my work →</a>
 </div>
 
 <footer>
   <p>© 2026 Muhammed Dogan</p>
-
   <p>
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="translation.html">Translation Disclaimer</a>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Translation Disclaimer</a>
   </p>
 </footer>
 
