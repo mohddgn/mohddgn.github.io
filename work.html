@@ -14,7 +14,6 @@ body {
   color: #1e293b;
 }
 
-/* NAV */
 nav {
   display: flex;
   justify-content: center;
@@ -27,14 +26,12 @@ nav {
 nav a {
   text-decoration: none;
   color: #334155;
-  font-weight: 500;
 }
 
 nav a:hover {
   color: #0ea5e9;
 }
 
-/* HEADER */
 header {
   text-align: center;
   padding: 70px 20px;
@@ -42,22 +39,25 @@ header {
   color: white;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-/* CONTAINER */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 40px 20px;
 }
 
-/* SECTION TITLE */
-.section-title {
-  margin-top: 40px;
-  font-size: 24px;
+/* FEATURED */
+.featured {
+  margin-bottom: 50px;
+}
+
+.featured img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.featured p {
+  text-align: justify;
 }
 
 /* GRID */
@@ -65,14 +65,13 @@ header h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
-  margin-top: 20px;
 }
 
 /* CARD */
 .card {
   background: white;
-  padding: 25px;
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
@@ -81,19 +80,18 @@ header h1 {
   transform: translateY(-5px);
 }
 
-/* TEXT */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
 p {
   text-align: justify;
-  line-height: 1.6;
-}
-
-/* LIST */
-ul {
-  padding-left: 18px;
-}
-
-li {
-  margin-bottom: 8px;
 }
 
 /* FOOTER */
@@ -126,90 +124,49 @@ footer {
 
 <div class="container">
 
-  <!-- CONSULTING -->
-  <h2 class="section-title">Environmental Consulting</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Environmental Impact Assessments (EIA)</h3>
-      <p>
-        Contributed to environmental impact assessments across marine, coastal, and terrestrial environments, 
-        supporting regulatory submissions aligned with UAE environmental authorities. Work involved ecological 
-        evaluations, habitat assessments, and preparation of structured technical documentation.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Environmental Baseline Surveys (EBS)</h3>
-      <p>
-        Conducted field surveys across multiple habitats, collecting biodiversity and environmental data to support 
-        baseline studies. Responsibilities included survey design, data collection, and integration into reporting 
-        and compliance documentation.
-      </p>
-    </div>
+  <!-- FEATURED -->
+  <div class="featured">
+    <h2>Environmental Consulting</h2>
+    <p>
+      Experience in environmental impact assessments and baseline studies across marine and terrestrial environments, 
+      supporting regulatory submissions and environmental decision-making processes.
+    </p>
+    <img src="consulting.jpg">
   </div>
 
-  <!-- RESEARCH -->
-  <h2 class="section-title">Research</h2>
-
+  <!-- GRID -->
   <div class="grid">
+
     <div class="card">
-      <h3>Marine Ecosystem Research</h3>
-      <p>
-        Analysed plankton communities and ecosystem indicators to assess coastal environmental health. 
-        Contributed to marine monitoring outputs and research-based reporting within academic settings.
-      </p>
+      <img src="research.jpg">
+      <div class="card-content">
+        <h3>Research</h3>
+        <p>
+          Academic and applied research focused on marine ecosystems, plankton dynamics, and biodiversity patterns.
+        </p>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Undergraduate Thesis</h3>
-      <p>
-        Conducted field-based research on zooplankton distribution within whale shark feeding zones in the Arabian Gulf. 
-        Proposed an integrated ecological monitoring framework linking plankton dynamics with megafauna behaviour.
-      </p>
-    </div>
-  </div>
-
-  <!-- LAB -->
-  <h2 class="section-title">Laboratory Work</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Molecular Analysis</h3>
-      <p>
-        Performed DNA extraction and analysis using standard laboratory protocols, including sample preparation, 
-        spectrophotometric assessment, and electrophoresis for quality evaluation.
-      </p>
+      <img src="lab.jpg">
+      <div class="card-content">
+        <h3>Laboratory Work</h3>
+        <p>
+          Experience in molecular and histopathological analysis including DNA extraction and tissue processing.
+        </p>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Histopathology</h3>
-      <p>
-        Conducted tissue sampling and preparation for histological analysis, including fixation, dehydration, 
-        and processing for microscopic examination of marine organisms.
-      </p>
-    </div>
-  </div>
-
-  <!-- FIELD -->
-  <h2 class="section-title">Field Experience</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Field Surveys</h3>
-      <p>
-        Carried out ecological surveys across coastal and terrestrial environments, applying methods such as 
-        transects, quadrats, and observational sampling to assess biodiversity and habitat conditions.
-      </p>
+      <img src="field.jpg">
+      <div class="card-content">
+        <h3>Field Experience</h3>
+        <p>
+          Field surveys, sampling, and environmental monitoring across diverse ecosystems and project sites.
+        </p>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Environmental Monitoring</h3>
-      <p>
-        Participated in environmental monitoring activities including sampling, data recording, and 
-        field-based assessments contributing to regulatory compliance and environmental reporting.
-      </p>
-    </div>
   </div>
 
 </div>
