@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Muhammed Dogan | Environmental Portfolio</title>
+<title>Muhammed Dogan</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -10,7 +10,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #f8fafc;
+  background: #ffffff;
   color: #1e293b;
 }
 
@@ -19,14 +19,13 @@ nav {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 15px;
+  padding: 20px;
   background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav a {
   text-decoration: none;
-  color: #334155;
+  color: #1e293b;
   font-weight: 500;
 }
 
@@ -35,62 +34,66 @@ nav a:hover {
 }
 
 /* HERO */
-header {
+.hero {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: white;
+  padding: 100px 20px 60px;
 }
 
-header h1 {
-  font-size: 42px;
+.hero h1 {
+  font-size: 48px;
   margin: 0;
 }
 
-header p {
-  font-size: 18px;
-  margin-top: 10px;
-  color: #cbd5f5;
+.hero p {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #475569;
 }
 
-/* INTRO */
-.intro {
-  max-width: 700px;
-  margin: 40px auto;
+/* SECTION */
+.section {
+  max-width: 800px;
+  margin: auto;
+  padding: 80px 20px;
   text-align: center;
+}
+
+/* LARGE TEXT */
+.big-text {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* SMALL TEXT */
+.small-text {
+  margin-top: 20px;
   font-size: 16px;
+  color: #64748b;
   line-height: 1.6;
 }
 
 /* SLIDER */
 .slider {
   max-width: 900px;
-  margin: 40px auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  margin: 60px auto;
 }
 
 .slider img {
   width: 100%;
-  display: none;
-}
-
-.slider img.active {
-  display: block;
+  border-radius: 10px;
 }
 
 /* SOCIAL */
 .socials {
   text-align: center;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 .socials a {
   margin: 0 12px;
   font-size: 22px;
-  text-decoration: none;
-  color: #334155;
+  color: #1e293b;
 }
 
 .socials a:hover {
@@ -100,8 +103,18 @@ header p {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   background: #0f172a;
+  color: white;
+}
+
+footer a {
+  color: #cbd5f5;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
   color: white;
 }
 </style>
@@ -117,59 +130,54 @@ footer {
   <a href="about.html">About</a>
   <a href="work.html">Work</a>
   <a href="publications.html">Publications</a>
-  <a href="skills.html">Skills</a>
-  <a href="cv.html">CV</a>
   <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
 </nav>
 
-<header>
+<div class="hero">
   <h1>Muhammed Dogan</h1>
-  <p>Environmental Scientist | Ecology • Data • Sustainability</p>
-</header>
-
-<div class="intro">
-  <p>
-    Environmental scientist working across fieldwork, research, and data-driven analysis. 
-    Focused on understanding biodiversity and environmental systems through practical and analytical approaches.
-  </p>
+  <p>Environmental Scientist</p>
 </div>
 
-<!-- IMAGE SLIDER -->
+<div class="section">
+  <div class="big-text">
+    I work at the intersection of ecology, fieldwork, and environmental analysis.
+  </div>
+
+  <div class="small-text">
+    My work explores biodiversity, marine systems, and environmental processes through a combination of research, 
+    field observation, and data-driven approaches.
+  </div>
+</div>
+
+<div class="section">
+  <div class="big-text">
+    Understanding the natural world requires both observation and interpretation.
+  </div>
+
+  <div class="small-text">
+    From field surveys to analytical work, I aim to bridge the gap between environmental data and meaningful insight.
+  </div>
+</div>
+
 <div class="slider">
-  <img src="img1.jpg" class="active">
-  <img src="img2.jpg">
-  <img src="img3.jpg">
+  <img src="img1.jpg">
 </div>
 
 <div class="socials">
-  <a href="https://www.linkedin.com/in/YOURPROFILE" target="_blank">
-    <i class="fab fa-linkedin"></i>
-  </a>
-
-  <a href="https://www.researchgate.net/profile/YOURPROFILE" target="_blank">
-    <i class="fab fa-researchgate"></i>
-  </a>
-
-  <a href="https://github.com/mohddgn" target="_blank">
-    <i class="fab fa-github"></i>
-  </a>
+  <a href="https://www.linkedin.com/in/YOURPROFILE"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.researchgate.net/profile/YOURPROFILE"><i class="fab fa-researchgate"></i></a>
+  <a href="https://github.com/mohddgn"><i class="fab fa-github"></i></a>
 </div>
 
 <footer>
   <p>© 2026 Muhammed Dogan</p>
+
+  <p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="translation.html">Translation Disclaimer</a>
+  </p>
 </footer>
-
-<script>
-let index = 0;
-const slides = document.querySelectorAll(".slider img");
-
-setInterval(() => {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}, 3000);
-</script>
 
 </body>
 </html>
