@@ -37,7 +37,7 @@ nav a:hover {
 /* HEADER */
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
 }
@@ -47,28 +47,47 @@ header h1 {
   font-size: 36px;
 }
 
-/* CONTENT */
+/* CONTAINER */
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 40px 20px;
 }
 
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* CARD */
 .card {
   background: white;
   padding: 25px;
   border-radius: 12px;
-  margin-bottom: 25px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
 }
 
-h2 {
-  margin-top: 0;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TEXT */
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* FULL WIDTH */
+.full {
+  grid-column: span 2;
 }
 
 /* LIST */
 ul {
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 li {
@@ -105,57 +124,61 @@ footer {
 
 <div class="container">
 
-  <div class="card">
-    <h2>Background</h2>
-    <p>
-      I am an Environmental Scientist with a background in marine and environmental sciences, 
-      with academic and professional experience across the UAE and Qatar. My work spans environmental 
-      consulting, research, and field-based ecological assessments.
-    </p>
-    <p>
-      I have contributed to environmental impact assessments (EIA), environmental baseline surveys (EBS), 
-      and marine monitoring projects, working across coastal, terrestrial, and urban environments. 
-      My experience includes both independent and team-based roles in consulting, government, and research settings.
-    </p>
-  </div>
+  <div class="grid">
 
-  <div class="card">
-    <h2>Approach</h2>
-    <p>
-      My approach combines field observation, scientific analysis, and structured reporting. 
-      I focus on understanding environmental systems through both practical fieldwork and analytical methods, 
-      aiming to translate complex ecological data into clear, actionable insights.
-    </p>
-  </div>
+    <div class="card full">
+      <p>
+        I am an environmental scientist with experience across research, environmental consulting, and field-based ecological work 
+        in the UAE and Qatar. My work focuses on understanding environmental systems through a combination of field observation, 
+        laboratory analysis, and data-driven approaches.
+      </p>
+      <p>
+        I have contributed to environmental impact assessments, biodiversity surveys, and marine monitoring projects, working across 
+        coastal, terrestrial, and urban environments. My experience spans consulting, academic research, and governmental contexts, 
+        allowing me to approach environmental challenges from both practical and analytical perspectives.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Experience Highlights</h2>
-    <ul>
-      <li>Environmental Impact Assessments (EIA) and Environmental Baseline Surveys (EBS)</li>
-      <li>Marine and coastal ecosystem monitoring</li>
-      <li>Biodiversity surveys and habitat assessments</li>
-      <li>Plankton and marine community analysis</li>
-      <li>Environmental reporting and regulatory documentation</li>
-    </ul>
-  </div>
+    <div class="card">
+      <h3>What I Do</h3>
+      <p>
+        I work at the intersection of environmental science and analysis, combining fieldwork, research, and data to investigate 
+        ecological systems. My goal is to translate environmental observations and datasets into meaningful insights that support 
+        better decision-making.
+      </p>
+    </div>
 
-  <div class="card">
-    <h2>Education</h2>
-    <p>
-      BSc Environmental Sciences with Marine Sciences<br>
-      Qatar University, Doha
-    </p>
-    <p>
-      Thesis: Characteristics and Distribution of the Zooplankton Community in the Al-Shaheen Oil Field Pelagic Ecosystem
-    </p>
-  </div>
+    <div class="card">
+      <h3>Focus Areas</h3>
+      <ul>
+        <li>Biodiversity & ecosystem assessment</li>
+        <li>Marine and coastal environments</li>
+        <li>Environmental data analysis</li>
+        <li>Sustainability and environmental systems</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>Interests</h2>
-    <p>
-      Marine and coastal ecosystems, biodiversity conservation, environmental data analysis, 
-      sustainability, and the intersection of science and real-world environmental decision-making.
-    </p>
+    <div class="card">
+      <h3>Experience</h3>
+      <ul>
+        <li>Environmental Impact Assessments (EIA)</li>
+        <li>Environmental Baseline Surveys (EBS)</li>
+        <li>Marine ecosystem monitoring</li>
+        <li>Field-based biodiversity surveys</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Education</h3>
+      <p>
+        BSc Environmental Sciences with Marine Sciences<br>
+        Qatar University
+      </p>
+      <p>
+        Thesis focused on zooplankton distribution and marine ecosystem dynamics in the Arabian Gulf.
+      </p>
+    </div>
+
   </div>
 
 </div>
