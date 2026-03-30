@@ -21,8 +21,6 @@ nav {
   gap: 30px;
   padding: 20px;
   font-weight: 500;
-  background: #f8fafc;   /* NEW */
-  border-bottom: 1px solid #e2e8f0;  /* NEW subtle line */
 }
 
 nav a {
@@ -77,6 +75,10 @@ nav a:hover {
   padding: 0 20px;
 }
 
+.section h3 {
+  margin-bottom: 20px;
+}
+
 /* TWO COLUMN */
 .two-col {
   display: flex;
@@ -87,13 +89,26 @@ nav a:hover {
   flex: 1;
 }
 
-.col h3 {
-  margin-bottom: 10px;
-}
-
 .col p, .col li {
   color: #475569;
   line-height: 1.6;
+}
+
+/* HIGHLIGHT */
+.highlight {
+  background: #f1f5f9;
+  padding: 60px 20px;
+}
+
+.highlight h3 {
+  text-align: center;
+}
+
+.highlight p {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 1.7;
 }
 
 /* EDUCATION */
@@ -108,18 +123,16 @@ nav a:hover {
   border-radius: 12px;
 }
 
-/* HIGHLIGHT */
-.highlight {
-  background: #f1f5f9;
-  padding: 60px 20px;
-  text-align: center;
+/* BOOK */
+.book {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
-.highlight p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 20px;
-  line-height: 1.7;
+.book img {
+  width: 180px;
+  border-radius: 10px;
 }
 
 /* FOOTER */
@@ -181,7 +194,7 @@ nav a:hover {
 
 /* RESPONSIVE */
 @media (max-width: 800px) {
-  .hero, .two-col, .education {
+  .hero, .two-col, .education, .book {
     flex-direction: column;
   }
 
@@ -209,66 +222,101 @@ nav a:hover {
     <h1>About Me</h1>
 
     <p>
-      I am an Environmental Scientist working across research, environmental consulting, and ecological fieldwork in the UAE and Qatar. My work focuses on understanding environmental systems through a combination of field data collection, laboratory analysis, and structured data interpretation.
+      I am an Environmental Scientist working across research, environmental consulting, and ecological fieldwork in the UAE and Qatar.
     </p>
 
     <p>
-      I have contributed to environmental impact assessments (EIA), environmental baseline surveys (EBS), and biodiversity monitoring projects across marine, coastal, and terrestrial ecosystems, translating ecological data into regulatory-ready outputs.
-    </p>
-
-    <p>
-      I operate at the intersection of science, data, and decision-making — turning environmental complexity into clear, structured insights for research, policy, and sustainability.
+      My work focuses on understanding environmental systems through field observation, laboratory analysis, and data-driven approaches — translating ecological complexity into structured insights that support real-world decision-making.
     </p>
   </div>
 
   <div class="hero-image">
-    <img src="profile.jpg" alt="Muhammed Dogan">
+    <img src="images/profile.jpg" alt="Muhammed Dogan">
   </div>
 </div>
 
-<!-- WHAT I DO -->
+<!-- BIOGRAPHY -->
+<div class="section">
+  <h3>Biography</h3>
+  <p>
+    I am Turkish, born and raised in Abu Dhabi, and shaped by a multicultural background that has influenced both how I see the world and how I approach environmental science. Growing up along the Arabian Gulf, I developed an early fascination with marine systems and the complex dynamics that sustain life within them.
+  </p>
+  <p>
+    This environment led me to explore how ecosystems function under extreme conditions, and how marine, terrestrial, and climate systems interact within rapidly developing regions. Over time, this curiosity evolved into a broader interest in sustainability, environmental systems, and the role of science in understanding and addressing global challenges.
+  </p>
+</div>
+
+<!-- WHAT DRIVES ME -->
+<div class="highlight">
+  <h3>What Drives Me</h3>
+  <p>
+    I am driven by a fundamental interest in understanding systems — not only individual components, but the relationships that define ecosystems.
+  </p>
+  <p>
+    My work is motivated by questions of resilience: how organisms and environments adapt under stress, and how these insights can inform sustainability, climate resilience, and environmental decision-making.
+  </p>
+</div>
+
+<!-- HOW I WORK + FOCUS -->
 <div class="section">
   <div class="two-col">
     <div class="col">
-      <h3>What I Do</h3>
+      <h3>How I Work</h3>
       <p>
-        I combine environmental fieldwork, ecological research, and data analysis to investigate natural systems and support evidence-based decision-making.
+        My approach integrates fieldwork, laboratory analysis, and data interpretation — moving from observation to application.
+      </p>
+      <p>
+        I translate environmental data into structured insights that support environmental assessments, regulatory processes, and sustainability strategies.
       </p>
     </div>
 
     <div class="col">
       <h3>Focus Areas</h3>
       <ul>
-        <li>EIA & Environmental Baseline Studies</li>
-        <li>Marine & coastal ecosystems</li>
-        <li>Biodiversity & habitat assessment</li>
-        <li>Environmental data analysis</li>
-        <li>Sustainability & ESG</li>
+        <li>Marine and coastal ecosystems</li>
+        <li>Terrestrial biodiversity systems</li>
+        <li>Environmental monitoring</li>
+        <li>Climate and environmental stress</li>
+        <li>Sustainability and ESG</li>
       </ul>
     </div>
   </div>
 </div>
 
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE + LANGUAGES -->
 <div class="section">
   <div class="two-col">
     <div class="col">
       <h3>Experience</h3>
       <ul>
         <li>Environmental Impact Assessments (EIA)</li>
-        <li>Environmental Baseline Surveys (EBS)</li>
-        <li>Marine biodiversity monitoring</li>
-        <li>GIS and ecological data structuring</li>
+        <li>Environmental Baseline Studies (EBS)</li>
+        <li>Biodiversity surveys</li>
+        <li>GIS and environmental data analysis</li>
+        <li>Regulatory reporting</li>
       </ul>
     </div>
 
     <div class="col">
-      <h3>Approach</h3>
-      <p>
-        I approach environmental science as both a technical and interpretive discipline — focusing on translating ecological data into meaningful insights that inform real-world decisions.
-      </p>
+      <h3>Languages</h3>
+      <ul>
+        <li>English — Native</li>
+        <li>Turkish — Native</li>
+        <li>Arabic — Fluent</li>
+        <li>Azerbaijani — Conversational</li>
+      </ul>
     </div>
   </div>
+</div>
+
+<!-- HONORS -->
+<div class="section">
+  <h3>Honors & Recognition</h3>
+  <ul>
+    <li>HH Sheikh Tamim Bin Hamad Al Thani Order of Academic Excellence (2024)</li>
+    <li>Vice-President’s List, Qatar University</li>
+    <li>John Ogden President’s Membership Award, International Coral Reef Society (ICRS) (2025)</li>
+  </ul>
 </div>
 
 <!-- EDUCATION -->
@@ -278,36 +326,46 @@ nav a:hover {
   <div class="education">
     <div>
       <p><strong>BSc Environmental Sciences with Marine Sciences</strong><br>Qatar University</p>
-
       <p>Graduated with High Distinction (GPA: 3.75 / 4.00)</p>
-
-      <p>
-        Thesis: Zooplankton distribution and ecosystem dynamics in the Arabian Gulf.
-      </p>
+      <p>Thesis: Zooplankton ecosystem dynamics in the Arabian Gulf</p>
 
       <ul>
-        <li>HH Sheikh Tamim Bin Hamad Al Thani Order of Academic Excellence (2024)</li>
-        <li>Vice-President’s List</li>
         <li>President, Student Council – DBES</li>
       </ul>
 
       <p><strong>Research:</strong> Undergraduate Research Experience Program (UREP)</p>
     </div>
 
-    <img src="graduation.jpg" alt="Graduation">
+    <img src="images/graduation.jpg" alt="Graduation">
   </div>
 </div>
 
 <!-- BOOK -->
-<div class="highlight">
-  <p>
-    I am also the author of <em>"Rise for the Earth"</em>, where I explore environmental awareness through storytelling and accessible science communication — aiming to bridge the gap between science and society.
-  </p>
+<div class="section">
+  <h3>Writing & Communication</h3>
+
+  <div class="book">
+    <img src="images/book.jpg" alt="Book Cover">
+
+    <div>
+      <p>
+        I am the author of <em>Rise for the Earth: Teachings from the Traditions That Shaped Us</em>.
+      </p>
+      <p>
+        The book explores environmental awareness through storytelling, cultural reflection, and accessible science communication.
+      </p>
+      <p>
+        ISBN: [YOUR ISBN]
+      </p>
+      <p>
+        Through writing, I aim to bridge the gap between scientific knowledge and public understanding.
+      </p>
+    </div>
+  </div>
 </div>
 
 <!-- FOOTER -->
 <footer class="footer">
-
   <div class="footer-container">
 
     <div class="footer-col">
@@ -342,7 +400,6 @@ nav a:hover {
   <div class="footer-bottom">
     © 2026 Muhammed Dogan
   </div>
-
 </footer>
 
 </body>
