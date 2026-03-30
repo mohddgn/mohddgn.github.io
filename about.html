@@ -37,7 +37,7 @@ nav a:hover {
 /* HEADER */
 header {
   text-align: center;
-  padding: 70px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
 }
@@ -49,9 +49,30 @@ header h1 {
 
 /* CONTAINER */
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 40px 20px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.hero p {
+  margin-bottom: 15px;
+  text-align: justify;
+  line-height: 1.7;
 }
 
 /* GRID */
@@ -67,17 +88,23 @@ header h1 {
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-  transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.card h3 {
+  margin-top: 0;
 }
 
-/* TEXT */
-p {
-  text-align: justify;
-  line-height: 1.6;
+/* EDUCATION FLEX */
+.education {
+  display: grid;
+  grid-template-columns: 1fr 140px;
+  gap: 15px;
+  align-items: center;
+}
+
+.education img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* FULL WIDTH */
@@ -100,6 +127,23 @@ footer {
   padding: 20px;
   background: #0f172a;
   color: white;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
@@ -124,58 +168,112 @@ footer {
 
 <div class="container">
 
-  <div class="grid">
+  <!-- HERO -->
+  <div class="hero">
+    <img src="profile.jpg" alt="Muhammed Dogan">
 
-    <div class="card full">
+    <div>
       <p>
-        I am an environmental scientist with experience across research, environmental consulting, and field-based ecological work 
-        in the UAE and Qatar. My work focuses on understanding environmental systems through a combination of field observation, 
-        laboratory analysis, and data-driven approaches.
+        I am an Environmental Scientist working across research, environmental consulting, and ecological fieldwork 
+        in the UAE and Qatar. My work focuses on understanding environmental systems through a combination of field 
+        data collection, laboratory analysis, and structured data interpretation.
       </p>
       <p>
-        I have contributed to environmental impact assessments, biodiversity surveys, and marine monitoring projects, working across 
-        coastal, terrestrial, and urban environments. My experience spans consulting, academic research, and governmental contexts, 
-        allowing me to approach environmental challenges from both practical and analytical perspectives.
+        I have contributed to environmental impact assessments (EIA), environmental baseline surveys (EBS), and 
+        biodiversity monitoring projects across marine, coastal, and terrestrial ecosystems, translating ecological 
+        data into regulatory-ready reports aligned with environmental compliance frameworks.
+      </p>
+      <p>
+        Alongside consulting, I have conducted marine research on plankton dynamics and ecosystem health in the 
+        Arabian Gulf, including the analysis of 200+ biological samples and the development of monitoring frameworks 
+        linking marine productivity and biodiversity patterns.
+      </p>
+      <p>
+        I operate at the intersection of science, data, and decision-making — turning environmental complexity into 
+        clear, structured insights for research, policy, and industry.
       </p>
     </div>
+  </div>
+
+  <!-- GRID -->
+  <div class="grid">
 
     <div class="card">
       <h3>What I Do</h3>
       <p>
-        I work at the intersection of environmental science and analysis, combining fieldwork, research, and data to investigate 
-        ecological systems. My goal is to translate environmental observations and datasets into meaningful insights that support 
-        better decision-making.
+        I combine environmental fieldwork, ecological research, and data analysis to investigate natural systems 
+        and support evidence-based decision-making. My work focuses on transforming environmental data into 
+        actionable insights for consulting, research, and sustainability contexts.
       </p>
     </div>
 
     <div class="card">
       <h3>Focus Areas</h3>
       <ul>
-        <li>Biodiversity & ecosystem assessment</li>
-        <li>Marine and coastal environments</li>
-        <li>Environmental data analysis</li>
-        <li>Sustainability and environmental systems</li>
+        <li>Environmental Impact Assessment (EIA) & Baseline Studies</li>
+        <li>Marine & coastal ecosystem analysis</li>
+        <li>Biodiversity monitoring and habitat assessment</li>
+        <li>Environmental data analysis & visualization</li>
+        <li>Sustainability and ESG frameworks</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>Experience</h3>
       <ul>
-        <li>Environmental Impact Assessments (EIA)</li>
-        <li>Environmental Baseline Surveys (EBS)</li>
-        <li>Marine ecosystem monitoring</li>
-        <li>Field-based biodiversity surveys</li>
+        <li>EIA and Environmental Baseline Surveys (EBS)</li>
+        <li>Marine and terrestrial biodiversity surveys</li>
+        <li>GIS-supported habitat mapping</li>
+        <li>Environmental reporting and compliance</li>
+        <li>Field survey methodologies and ecological data collection</li>
       </ul>
     </div>
 
     <div class="card">
       <h3>Education</h3>
+
+      <div class="education">
+        <div>
+          <p>
+            <strong>BSc Environmental Sciences with Marine Sciences</strong><br>
+            Qatar University
+          </p>
+
+          <p>
+            Graduated with High Distinction (GPA: 3.75 / 4.00)
+          </p>
+
+          <p>
+            Thesis: Zooplankton distribution and ecosystem dynamics in the Arabian Gulf.
+          </p>
+
+          <ul>
+            <li>HH Sheikh Tamim Bin Hamad Al Thani Order of Academic Excellence (2024)</li>
+            <li>Vice-President’s List / High Academic Standing</li>
+            <li>President, Student Council – DBES</li>
+          </ul>
+
+          <p>
+            <strong>Research Experience:</strong><br>
+            Undergraduate Research Experience Program (UREP)
+          </p>
+        </div>
+
+        <img src="graduation.jpg" alt="Graduation Photo">
+      </div>
+
+    </div>
+
+    <!-- BOOK -->
+    <div class="card full">
+      <h3>Writing & Communication</h3>
       <p>
-        BSc Environmental Sciences with Marine Sciences<br>
-        Qatar University
+        I am also the author of <em>"Rise for the Earth"</em>, a work that explores environmental awareness through 
+        storytelling and accessible science communication.
       </p>
       <p>
-        Thesis focused on zooplankton distribution and marine ecosystem dynamics in the Arabian Gulf.
+        Through writing, I aim to bridge the gap between scientific knowledge and public understanding — making 
+        environmental issues more relatable, human, and impactful beyond academic and technical spaces.
       </p>
     </div>
 
@@ -183,8 +281,44 @@ footer {
 
 </div>
 
-<footer>
-  <p>© 2026 Muhammed Dogan</p>
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Publications</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">LinkedIn</a>
+      <a href="#">ResearchGate</a>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>muhammed.environment@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-legal">
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Translation Disclaimer</a>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Muhammed Dogan
+  </div>
+
 </footer>
 
 </body>
