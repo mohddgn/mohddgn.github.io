@@ -52,17 +52,17 @@ nav a:hover {
   margin: 0;
 }
 
+.hero-role {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
 .hero-text p {
   font-size: 18px;
   margin-top: 20px;
   color: #475569;
   line-height: 1.6;
-}
-
-.hero-highlight {
-  margin-top: 25px;
-  font-size: 20px;
-  font-weight: 500;
 }
 
 .hero-image {
@@ -100,7 +100,7 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* HIGHLIGHT SECTION */
+/* HIGHLIGHT */
 .highlight {
   background: #f1f5f9;
   padding: 60px 20px;
@@ -127,18 +127,63 @@ nav a:hover {
 }
 
 /* FOOTER */
-footer {
-  text-align: center;
-  padding: 40px;
+.footer {
   background: #0f172a;
+  color: #cbd5f5;
+  padding: 60px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  min-width: 150px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
   color: white;
 }
 
-footer a {
+.footer-col a {
+  display: block;
+  text-decoration: none;
   color: #cbd5f5;
+  margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+  color: white;
+}
+
+.footer-col p {
+  margin: 0;
+}
+
+.footer-legal {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-legal a {
+  color: #94a3b8;
+  margin: 0 10px;
   text-decoration: none;
 }
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #64748b;
+}
 </style>
+
 </head>
 
 <body>
@@ -157,13 +202,10 @@ footer a {
 
   <div class="hero-text">
     <h1>Muhammed Dogan</h1>
-
-    <div class="hero-highlight">
-      Environmental Scientist
-    </div>
+    <div class="hero-role">Environmental Scientist</div>
 
     <p>
-      Bridging field ecology, environmental data, and sustainability-driven decision-making across real ecosystems in the UAE and Qatar.
+      Bridging environmental science, data analysis, and sustainability to understand and inform real-world ecosystems.
     </p>
   </div>
 
@@ -179,16 +221,16 @@ footer a {
   <div class="two-col">
 
     <div class="col">
-      <h3>Scope of Work</h3>
+      <h3>Areas of Work</h3>
       <p>
-        Environmental Impact Assessments (EIA), Environmental Baseline Studies (EBS), and biodiversity assessments across marine, coastal, and terrestrial ecosystems.
+        Environmental Impact Assessments (EIA), Environmental Baseline Studies (EBS), biodiversity assessment, sustainability analysis, and environmental data-driven research across marine, coastal, and terrestrial systems.
       </p>
     </div>
 
     <div class="col">
-      <h3>Professional Context</h3>
+      <h3>Approach & Application</h3>
       <p>
-        Supporting regulatory submissions aligned with EAD, DM, DECCA, and ISO 14001, with exposure to ESG and sustainability reporting frameworks.
+        Working across consulting, research, and sustainability contexts, with experience supporting regulatory frameworks (EAD, DM, DECCA, ISO 14001) and contributing to ESG and environmental reporting practices.
       </p>
     </div>
 
@@ -199,7 +241,7 @@ footer a {
 <!-- HIGHLIGHT -->
 <div class="highlight">
   <p>
-    I combine field-based ecological work with environmental data analysis, working with biodiversity datasets to identify patterns, quantify ecosystems, and support evidence-based environmental and sustainability decision-making.
+    My work integrates field-based ecology, environmental data analysis, and sustainability thinking — applying quantitative and scientific approaches to understand ecosystems, support decision-making, and contribute to both applied and research-driven environmental work.
   </p>
 </div>
 
@@ -208,13 +250,45 @@ footer a {
   <a href="#">Explore my work →</a>
 </div>
 
-<footer>
-  <p>© 2026 Muhammed Dogan</p>
-  <p>
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Publications</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">LinkedIn</a>
+      <a href="#">ResearchGate</a>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>muhammed.environment@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-legal">
     <a href="#">Privacy Policy</a> |
     <a href="#">Translation Disclaimer</a>
-  </p>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Muhammed Dogan
+  </div>
+
 </footer>
 
 </body>
-</html> 
+</html>
